@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Variables</title>
+
+    <style>
+        .Section {
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .Heading {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            padding: 10px 0;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            font-size: 28px;
+        }
+
+        .Page {
+            color: white;
+            background-color: black;
+        }
+
+        .Button {
+            text-wrap: nowrap;
+            padding: 10px 20px;
+            border-radius: 10px;
+            border: none;
+            background-color: #009dff;
+            color: #ffffff;
+            font-weight: bold;
+            font-size: 18px;
+            font-family: Arial, Helvetica, sans-serif;
+            transition-duration: 150ms;
+        }
+
+        .Button:active {
+            background-color: rgb(0 157 255 / 0.85);
+        }
+    </style>
+
+    <script>
+        let Quantity = 0;
+    </script>
+</head>
+<body class="Page">
+<section class="Heading">Cart Quantity</section>
+<section class="Section">
+    <button class="Button" onclick="console.log('Cart Quantity : ',Quantity);">Show Quantity</button>
+    <button class="Button" onclick="console.log('Cart Quantity : ',(Quantity+=1));">Add To Cart</button>
+    <button class="Button" onclick="console.log('Cart Quantity : ',(Quantity+=2));">Add 2</button>
+    <button class="Button" onclick="console.log('Cart Quantity : ',(Quantity+=3));">Add 3</button>
+    <button class="Button" onclick="console.log('Cart Quantity : ',(Quantity=0));">Reset Cart</button>
+</section>
+</body>
+</html>
