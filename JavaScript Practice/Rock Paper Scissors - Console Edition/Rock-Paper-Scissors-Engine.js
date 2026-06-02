@@ -30,12 +30,12 @@ function DrawPrint(UserInput) {
 }
 
 function WinPrint(UserInput) {
-    document.getElementById("Result").textContent = "Win";
+    document.getElementById("Result").textContent = "You Win";
     document.getElementById("Wins").textContent = "Wins : " + (Wins += 1);
 }
 
 function LossPrint(UserInput) {
-    document.getElementById("Result").textContent = "Lose";
+    document.getElementById("Result").textContent = "You Lose";
     document.getElementById("Losses").textContent = "Losses : " + (Losses += 1);
 }
 
