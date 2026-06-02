@@ -17,6 +17,7 @@ body {
 
 .Header {
   padding-top: 25px;
+  color:cyan;
 }
 
 .Button-Section {
@@ -41,4 +42,9 @@ body {
 
 .Button:active {
   background-color: rgb(222, 222, 222);
+}
+
+.Result-Div {
+  font-weight: bold;
+  font-size: 18px;
 }
