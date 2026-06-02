@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Rock Paper Scissors Game</title>
+    <link rel="stylesheet" href="Rock-Paper-Scissors-Styles.css" />
+    <link rel="script" href="Rock-Paper-Scissors-Engine.js" />
+  </head>
+  <body>
+    <header class="Header">
+      <h1>Rock Paper Scissors Game - Console Version</h1>
+    </header>
+
+    <section class="Button-Section">
+      <button
+        class="Button"
+        onclick="
+          ComputerMove();
+          RockOutput();
+        ">
+        Rock
+      </button>
+
+      <button
+        class="Button"
+        onclick="
+          ComputerMove();
+          PaperOutput();
+        ">
+        Paper
+      </button>
+
+      <button
+        class="Button"
+        onclick="
+          ComputerMove();
+          ScissorsOutput();
+        ">
+        Scissors
+      </button>
+    </section>
+  </body>
+</html>
