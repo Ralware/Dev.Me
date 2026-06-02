@@ -25,21 +25,18 @@ function GameEngine(UserInput) {
 }
 
 function DrawPrint(UserInput) {
-    console.log("It's A DRAW!\nComputer Chose: " + RandomOutput + "\nYou Chose: " + UserInput);
-    document.getElementById("Result").textContent = "It's A DRAW! , Computer Chose: " + RandomOutput + " , You Chose: " + UserInput;
-    document.getElementById("Count").textContent = "Wins : " + Wins + " Losses : " + Losses + " Draws : " + (Draws += 1);
+    document.getElementById("Result").textContent = "Draw";
+    document.getElementById("Draws").textContent = "Draws : " + (Draws += 1);
 }
 
 function WinPrint(UserInput) {
-    console.log("You Have WON!\nComputer Chose: " + RandomOutput + "\nYou Chose: " + UserInput);
-    document.getElementById("Result").textContent = "You Have WON! , Computer Chose: " + RandomOutput + " , You Chose: " + UserInput;
-    document.getElementById("Count").textContent = "Wins : " + (Wins += 1) + " Losses : " + (Losses) + " Draws : " + (Draws);
+    document.getElementById("Result").textContent = "Win";
+    document.getElementById("Wins").textContent = "Wins : " + (Wins += 1);
 }
 
 function LossPrint(UserInput) {
-    console.log("You Have LOST!\nComputer Chose: " + RandomOutput + "\nYou Chose: " + UserInput);
-    document.getElementById("Result").textContent = "You Have LOST! , Computer Chose: " + RandomOutput + " , You Chose: " + UserInput;
-    document.getElementById("Count").textContent = "Wins : " + Wins + " Losses : " + (Losses += 1) + " Draws : " + (Draws);
+    document.getElementById("Result").textContent = "Lose";
+    document.getElementById("Losses").textContent = "Losses : " + (Losses += 1);
 }
 
 

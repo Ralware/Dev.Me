@@ -7,17 +7,16 @@
 body {
   background-color: black;
   color: white;
-
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-
   gap: 30px;
 }
 
 .Header {
   padding-top: 25px;
-  color: cyan;
+  color: #ffffff;
 }
 
 .Button-Section {
@@ -27,24 +26,50 @@ body {
 
 .Button {
   padding: 10px;
-  border: none;
-  border-radius: 10px;
-
-  background-color: white;
+  border-radius: 50%;
+  background-color: transparent;
+  border: 2px white solid;
   color: black;
-
   font-size: 16px;
   font-weight: bold;
-
   transition: 150ms;
   cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  height: 150px;
 }
 
 .Button:active {
-  background-color: rgb(222, 222, 222);
+  background-color: rgb(222, 222, 222, 0.15);
 }
 
 .Result-Div {
   font-weight: bold;
   font-size: 18px;
+}
+
+.Icons {
+  width: 75px;
+}
+
+.Statistics-Section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+}
+
+.Stats-Div {
+  padding: 20px;
+  border: 2px solid white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  border-radius: 20px;
+  box-shadow: 1px 1px 10px rgb(255, 255, 255, 0.5);
 }

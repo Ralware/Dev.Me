@@ -12,13 +12,26 @@
     </header>
 
     <section class="Button-Section">
-      <button class="Button" onclick="GameEngine('Rock')">Rock</button>
+      <button class="Button" onclick="GameEngine('Rock')">
+        <img src="Sources/Rock.Icon.png" alt="Rock" class="Icons" />
+      </button>
 
-      <button class="Button" onclick="GameEngine('Paper')">Paper</button>
+      <button class="Button" onclick="GameEngine('Paper')">
+        <img src="Sources/Paper.Icon.png" alt="Rock" class="Icons" />
+      </button>
 
-      <button class="Button" onclick="GameEngine('Scissors')">Scissors</button>
+      <button class="Button" onclick="GameEngine('Scissors')">
+        <img src="Sources/Scissors.Icon.png" alt="Rock" class="Icons" />
+      </button>
     </section>
-    <div id="Result" class="Result-Div">Start Playing !</div>
-    <div id="Count" class="Result-Div">Your Wins And Losses Show Up Here !</div>
+    <section class="Statistics-Section">
+      <div id="Result">Start Playing !</div>
+      <div id="Outcome">Outcome Shows Up Here</div>
+      <div class="Stats-Div">
+        <div id="Wins">Wins : 0</div>
+        <div id="Losses">Losses : 0</div>
+        <div id="Draws">Draws : 0</div>
+      </div>
+    </section>
   </body>
 </html>
