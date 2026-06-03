@@ -1,11 +1,17 @@
 let RandomOutput = '';
 let Outcome = '';
-const GameVariables =
-{
+
+const SavedGame = JSON.parse(localStorage.getItem("GameVariables"));
+
+const GameVariables = SavedGame || {
     Win: 0,
     Loss: 0,
     Draw: 0,
 };
+
+document.getElementById("Win").innerHTML = GameVariables.Win;
+document.getElementById("Loss").innerHTML = GameVariables.Loss;
+document.getElementById("Draw").innerHTML = GameVariables.Draw;
 
 function GameEngine(UserInput) {
 
@@ -38,6 +44,7 @@ function OutcomePrint(UserInput, Outcome) {
     document.getElementById(Outcome).textContent = ++GameVariables[Outcome];
     document.getElementById("YourChoice").textContent = "You Chose : " + UserInput;
     document.getElementById("ComputerChoice").textContent = "Computer Chose : " + RandomOutput;
+    localStorage.setItem("GameVariables", JSON.stringify(GameVariables));
 }
 
 function ResetFunction() {
@@ -46,6 +53,7 @@ function ResetFunction() {
     GameVariables.Loss = 0;
     Outcome = '';
     RandomOutput = '';
+    localStorage.setItem("GameVariables", JSON.stringify(GameVariables));
     ResetPrint();
 }
 
