@@ -1,9 +1,14 @@
-let RandomOutput;
-let Wins = 0;
-let Losses = 0;
-let Draws = 0;
+let RandomOutput = '';
+let Outcome = '';
+const GameVariables =
+    {
+        Win: 0,
+        Loss: 0,
+        Draw: 0,
+    };
 
 function GameEngine(UserInput) {
+
 
     let RandomChoice = Math.random();
     if (RandomChoice < 1 / 3) {
@@ -15,42 +20,39 @@ function GameEngine(UserInput) {
     }
 
     if (UserInput === RandomOutput) {
-        DrawPrint(UserInput);
+        Outcome = 'Draw';
+        OutcomePrint(UserInput, Outcome);
     } else if ((UserInput === "Rock" && RandomOutput === "Paper") || (UserInput === "Paper" && RandomOutput === "Scissors") || (UserInput === "Scissors" && RandomOutput === "Rock")) {
-        LossPrint(UserInput);
+        Outcome = 'Loss'
+        OutcomePrint(UserInput, Outcome);
     } else if ((UserInput === "Rock" && RandomOutput === "Scissors") || (UserInput === "Paper" && RandomOutput === "Rock") || (UserInput === "Scissors" && RandomOutput === "Paper")) {
-        WinPrint(UserInput);
+        Outcome = 'Win'
+        OutcomePrint(UserInput, Outcome);
 
     }
+
 }
 
-function DrawPrint(UserInput) {
-    document.getElementById("Result").textContent = "Draw";
-    document.getElementById("Draws").textContent = "Draws : " + (Draws += 1);
-    document.getElementById("Outcome").textContent = "You Chose : " + UserInput + " | Computer Chose : "+ RandomOutput;
-}
-
-function WinPrint(UserInput) {
-    document.getElementById("Result").textContent = "You Win";
-    document.getElementById("Wins").textContent = "Wins : " + (Wins += 1);
-    document.getElementById("Outcome").textContent = "You Chose : " + UserInput + " | Computer Chose : "+ RandomOutput;
-}
-
-function LossPrint(UserInput) {
-    document.getElementById("Result").textContent = "You Lose";
-    document.getElementById("Losses").textContent = "Losses : " + (Losses += 1);
-    document.getElementById("Outcome").textContent = "You Chose : " + UserInput + " | Computer Chose : "+ RandomOutput;
+function OutcomePrint(UserInput, Outcome) {
+    document.getElementById("Result").textContent = Outcome;
+    document.getElementById(Outcome).textContent = ++GameVariables[Outcome];
+    document.getElementById("Outcome-Stats").textContent = "You Chose : " + UserInput + " | Computer Chose : " + RandomOutput;
 }
 
 function ResetFunction() {
-    Wins = 0;
-    Losses = 0;
-    Draws = 0;
+    GameVariables.Draw = 0;
+    GameVariables.Win = 0;
+    GameVariables.Loss = 0;
+    Outcome = '';
+    RandomOutput = '';
+    ResetPrint();
+}
 
-    document.getElementById("Wins").textContent = "Wins : 0";
-    document.getElementById("Losses").textContent = "Losses : 0";
-    document.getElementById("Draws").textContent = "Draws : 0";
-    document.getElementById("Outcome").textContent = "Outcome Shows Up Here";
+function ResetPrint() {
+    document.getElementById("Win").textContent = "0";
+    document.getElementById("Loss").textContent = "0";
+    document.getElementById("Draw").textContent = "0";
+    document.getElementById("Outcome-Stats").textContent = "Outcome Shows Up Here";
     document.getElementById("Result").textContent = "Start Playing !";
 }
 

@@ -1,93 +1,92 @@
 * {
-  margin: 0;
-  padding: 0;
-  font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 body {
-  background-color: black;
-  color: white;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  gap: 30px;
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
 }
 
 .Header {
-  padding-top: 25px;
-  color: #ffffff;
+    padding-top: 25px;
+    color: #ffffff;
 }
 
 .Button-Section {
-  display: flex;
-  gap: 20px;
+    display: flex;
+    gap: 20px;
 }
 
 .Button {
-  padding: 10px;
-  border-radius: 50%;
-  background-color: transparent;
-  border: 2px white solid;
-  color: black;
-  font-size: 16px;
-  font-weight: bold;
-  transition: 150ms;
-  cursor: pointer;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 150px;
-  height: 150px;
+    padding: 10px;
+    border-radius: 50%;
+    background-color: transparent;
+    border: 2px white solid;
+    color: black;
+    font-size: 16px;
+    font-weight: bold;
+    transition: 150ms;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 150px;
 }
 
 .Button:active {
-  background-color: rgb(222, 222, 222, 0.15);
+    background-color: rgb(222, 222, 222, 0.15);
 }
 
 .Result-Div {
-  font-weight: bold;
-  font-size: 18px;
+    font-weight: bold;
+    font-size: 18px;
 }
 
 .Icons {
-  width: 75px;
+    width: 75px;
 }
 
 .Statistics-Section {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  gap: 30px;
-  font-weight:bold;
-  font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    font-weight: bold;
+    font-size: 18px;
 }
 
 .Stats-Div {
-  padding: 20px;
-  border: 2px solid white;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  gap: 20px;
-  border-radius: 20px;
-  box-shadow: 1px 1px 10px rgb(255, 255, 255, 0.5);
+    padding: 20px;
+    border: 2px solid white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    border-radius: 20px;
+    box-shadow: 1px 1px 10px rgb(255, 255, 255, 0.5);
 }
 
-.Reset-Button
-{
-  padding:10px;
-  border: 2px solid white;
-  background-color:transparent;
-  border-radius: 10px;
-  font-weight:bold;
-  color:white;
-  transition: 150ms;
-  cursor: pointer;
+.Reset-Button {
+    padding: 10px;
+    border: 2px solid white;
+    background-color: transparent;
+    border-radius: 10px;
+    font-weight: bold;
+    color: white;
+    transition: 150ms;
+    cursor: pointer;
 }
 
 .Reset-Button:active {
-  background-color: rgba(255, 255, 255,0.25);
+    background-color: rgba(255, 255, 255, 0.25);
 }
