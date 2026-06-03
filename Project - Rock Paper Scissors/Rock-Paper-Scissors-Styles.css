@@ -41,6 +41,7 @@ body {
   width: 150px;
   height: 150px;
 }
+
 .Button:hover {
   background-color: rgb(222, 222, 222, 0.25);
 }
@@ -94,9 +95,11 @@ body {
   transition: 150ms;
   cursor: pointer;
 }
+
 .Reset-Button:hover {
   background-color: rgb(222, 222, 222, 0.25);
 }
+
 .Reset-Button:active {
   background-color: rgba(255, 255, 255, 0.5);
 }
@@ -112,3 +115,5 @@ body {
   border-radius: 20px;
   border: 2px solid white;
 }
+
+/* Project Completed ! */
