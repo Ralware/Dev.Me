@@ -42,8 +42,8 @@ function GameEngine(UserInput) {
 function OutcomePrint(UserInput, Outcome) {
     document.getElementById("Result").textContent = Outcome;
     document.getElementById(Outcome).textContent = ++GameVariables[Outcome];
-    document.getElementById("YourChoice").textContent = "You Chose : " + UserInput;
-    document.getElementById("ComputerChoice").textContent = "Computer Chose : " + RandomOutput;
+    PrintChoice(UserInput);
+    PrintComputerChoice();
     localStorage.setItem("GameVariables", JSON.stringify(GameVariables));
 }
 
@@ -61,11 +61,41 @@ function ResetPrint() {
     document.getElementById("Win").textContent = "0";
     document.getElementById("Loss").textContent = "0";
     document.getElementById("Draw").textContent = "0";
-    document.getElementById("YourChoice").textContent = "Your Choice Shows Up Here";
-    document.getElementById("ComputerChoice").textContent = "Computer Choice Shows Up Here";
+    document.getElementById("You-Choose-Text").textContent = "Your Choice Shows Up Here";
+    document.getElementById("Computer-Chose-Text").textContent = "Computer Choice Shows Up Here";
     document.getElementById("Result").textContent = "Start Playing !";
+    document.querySelector('.Choice').innerHTML = '';
+    document.querySelector('.Output').innerHTML = '';
+}
+function PrintChoice(UserInput) {
+    if (UserInput === 'Rock'){
+        document.getElementById("You-Choose-Text").textContent = "Your Choice : ";
+        document.querySelector('.Choice').innerHTML = '<img alt="Your Choice" class="Icons" src="Sources/Rock.Icon.png">';
+    }
+    else if (UserInput === 'Paper'){
+        document.getElementById("You-Choose-Text").textContent = "Your Choice : ";
+        document.querySelector('.Choice').innerHTML = '<img alt="Your Choice" class="Icons" src="Sources/Paper.Icon.png">';
+    }
+    else if (UserInput === 'Scissors'){
+        document.getElementById("You-Choose-Text").textContent = "Your Choice : ";
+        document.querySelector('.Choice').innerHTML = '<img alt="Your Choice" class="Icons" src="Sources/Scissors.Icon.png">';
+    }
 }
 
+function PrintComputerChoice() {
+    if (RandomOutput === 'Rock'){
+        document.getElementById("Computer-Chose-Text").textContent = "Computer Choice : ";
+        document.querySelector('.Output').innerHTML = '<img alt="Your Choice" class="Icons" src="Sources/Rock.Icon.png">';
+    }
+    else if (RandomOutput === 'Paper'){
+        document.getElementById("Computer-Chose-Text").textContent = "Computer Choice : ";
+        document.querySelector('.Output').innerHTML = '<img alt="Your Choice" class="Icons" src="Sources/Paper.Icon.png">';
+    }
+    else if (RandomOutput === 'Scissors'){
+        document.getElementById("Computer-Chose-Text").textContent = "Computer Choice : ";
+        document.querySelector('.Output').innerHTML = '<img alt="Your Choice" class="Icons" src="Sources/Scissors.Icon.png">';
+    }
+}
 /* Project Completed ! */
 
 
