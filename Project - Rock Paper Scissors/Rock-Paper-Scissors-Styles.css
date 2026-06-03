@@ -15,6 +15,7 @@ body {
 }
 
 .Header {
+    text-decoration: underline;
     padding-top: 25px;
     color: #ffffff;
 }
@@ -40,12 +41,18 @@ body {
     width: 150px;
     height: 150px;
 }
+.Button:hover {
+    background-color: rgb(222, 222, 222, 0.25);
+}
 
 .Button:active {
-    background-color: rgb(222, 222, 222, 0.15);
+    background-color: rgb(222, 222, 222, 0.5);
 }
 
 .Result-Div {
+    padding: 20px;
+    border-radius: 20px;
+    border: 2px solid white;
     font-weight: bold;
     font-size: 18px;
 }
@@ -80,13 +87,29 @@ body {
     padding: 10px;
     border: 2px solid white;
     background-color: transparent;
-    border-radius: 10px;
+    border-radius: 20px;
     font-weight: bold;
+    font-size: 18px;
     color: white;
     transition: 150ms;
     cursor: pointer;
 }
-
+.Reset-Button:hover {
+    background-color: rgb(222, 222, 222, 0.25);
+}
 .Reset-Button:active {
-    background-color: rgba(255, 255, 255, 0.25);
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.Outcome
+{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: space-between;
+    align-items: center;
+    text-wrap:nowrap;
+    padding: 20px;
+    border-radius: 20px;
+    border: 2px solid white;
 }

@@ -36,7 +36,8 @@ function GameEngine(UserInput) {
 function OutcomePrint(UserInput, Outcome) {
     document.getElementById("Result").textContent = Outcome;
     document.getElementById(Outcome).textContent = ++GameVariables[Outcome];
-    document.getElementById("Outcome-Stats").textContent = "You Chose : " + UserInput + " | Computer Chose : " + RandomOutput;
+    document.getElementById("YourChoice").textContent = "You Chose : " + UserInput;
+    document.getElementById("ComputerChoice").textContent = "Computer Chose : " + RandomOutput;
 }
 
 function ResetFunction() {
@@ -52,7 +53,8 @@ function ResetPrint() {
     document.getElementById("Win").textContent = "0";
     document.getElementById("Loss").textContent = "0";
     document.getElementById("Draw").textContent = "0";
-    document.getElementById("Outcome-Stats").textContent = "Outcome Shows Up Here";
+    document.getElementById("YourChoice").textContent = "Your Choice Shows Up Here";
+    document.getElementById("ComputerChoice").textContent = "Computer Choice Shows Up Here";
     document.getElementById("Result").textContent = "Start Playing !";
 }
 
