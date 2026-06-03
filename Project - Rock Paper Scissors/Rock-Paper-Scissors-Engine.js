@@ -1,11 +1,11 @@
 let RandomOutput = '';
 let Outcome = '';
 const GameVariables =
-    {
-        Win: 0,
-        Loss: 0,
-        Draw: 0,
-    };
+{
+    Win: 0,
+    Loss: 0,
+    Draw: 0,
+};
 
 function GameEngine(UserInput) {
 

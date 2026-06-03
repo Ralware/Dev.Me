@@ -1,47 +1,49 @@
 <!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8"/>
+  <head>
+    <meta charset="UTF-8" />
     <title>Rock Paper Scissors Game</title>
-    <link rel="stylesheet" href="Rock-Paper-Scissors-Styles.css"/>
+    <link rel="stylesheet" href="Rock-Paper-Scissors-Styles.css" />
+    <link rel="icon" href="Sources/Rock.Icon.png" type="image/x-icon" />
     <script src="Rock-Paper-Scissors-Engine.js"></script>
-</head>
-<body>
-<header class="Header">
-    <h1 class="H1">Rock Paper Scissors Game</h1>
-</header>
+  </head>
+  <body>
+    <header class="Header">
+      <h1 class="H1">Rock Paper Scissors Game</h1>
+    </header>
 
-<section class="Button-Section">
-    <button class="Button" onclick="GameEngine('Rock')">
-        <img src="Sources/Rock.Icon.png" alt="Rock" class="Icons"/>
-    </button>
+    <section class="Button-Section">
+      <button class="Button" onclick="GameEngine('Rock')">
+        <img src="Sources/Rock.Icon.png" alt="Rock" class="Icons" />
+      </button>
 
-    <button class="Button" onclick="GameEngine('Paper')">
-        <img src="Sources/Paper.Icon.png" alt="Rock" class="Icons"/>
-    </button>
+      <button class="Button" onclick="GameEngine('Paper')">
+        <img src="Sources/Paper.Icon.png" alt="Rock" class="Icons" />
+      </button>
 
-    <button class="Button" onclick="GameEngine('Scissors')">
-        <img src="Sources/Scissors.Icon.png" alt="Rock" class="Icons"/>
-    </button>
-</section>
-<section class="Statistics-Section">
-    <div id="Result" class="Result-Div">Start Playing !</div>
-    <div class="Outcome">
+      <button class="Button" onclick="GameEngine('Scissors')">
+        <img src="Sources/Scissors.Icon.png" alt="Rock" class="Icons" />
+      </button>
+    </section>
+    <section class="Statistics-Section">
+      <div id="Result" class="Result-Div">Start Playing !</div>
+      <div class="Outcome">
         <div id="YourChoice">Your Choice Shows Up Here</div>
         <div id="ComputerChoice">Computer Choice Shows Up Here</div>
-    </div>
-    <div class="Stats-Div">
+      </div>
+      <div class="Stats-Div">
         <div>Wins :</div>
         <div id="Win">0</div>
         <div>Losses :</div>
         <div id="Loss">0</div>
         <div>Draws :</div>
         <div id="Draw">0</div>
-    </div>
-    <div>
-        <button class="Reset-Button" onclick="ResetFunction()">Reset Scores</button>
-    </div>
-</section>
-
-</body>
+      </div>
+      <div>
+        <button class="Reset-Button" onclick="ResetFunction()">
+          Reset Scores
+        </button>
+      </div>
+    </section>
+  </body>
 </html>
