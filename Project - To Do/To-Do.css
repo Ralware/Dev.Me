@@ -48,7 +48,6 @@
 }
 
 .New-Tasks-Container {
-  padding: 0 20px;
   margin: 0 10px 5px 5px;
   border-radius: 10px;
   display: flex;
@@ -74,12 +73,20 @@
 .Add-Button {
   padding: 12px 25px;
   color: white;
-  font-weight: bold;
   border-radius: 10px;
   background-color: black;
   font-size: 16px;
   border: none;
   cursor: pointer;
+  transition: 0.15s;
+}
+
+.Add-Button:hover {
+  opacity:0.85;
+}
+
+.Add-Button:active {
+  opacity:0.75;
 }
 
 .Delete-Button {
@@ -88,6 +95,21 @@
   background-color: #000000;
   border-radius: 10px;
   cursor: pointer;
+  transition:150ms;
+}
+.Delete-Button:hover {
+  background-color:red;
+  border:2px solid red;
+}
+
+.Done-Button
+{
+  padding: 10px 15px;
+  color: white;
+  background-color: #000000;
+  border-radius: 10px;
+  cursor: pointer;
+  transition:150ms;
 }
 
 .Task-Row {
@@ -103,4 +125,17 @@
   flex-direction: row;
   align-items: center;
   gap: 20px;
+}
+
+.Done-Decoration
+{
+  text-decoration: line-through;
+}
+
+.Done-Color
+{
+  transition: 150ms;
+  border: 2px solid #00ff00;
+  background-color: #00ff00;
+  color:white;
 }
