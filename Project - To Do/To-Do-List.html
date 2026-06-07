@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="To-Do.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link rel="icon" href="Sources/Tick.Icon.png"/>
+    <link
+            href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap"
+            rel="stylesheet"/>
+    <title>To Do List</title>
+</head>
+<body class="Page">
+<div class="Top-Bar-Wrapper">
+<div class="New-Tasks-Container">
+    <div class="Title">To Do List</div>
+    <div class="Inputs-Container">
+    <input
+            id="Input"
+            placeholder="Task Name"
+            aria-label="Add To Do Items"
+            class="Task-Input"/>
+    <input
+            type="date"
+            id="DueDate"
+            aria-label="Add Due Date"
+            class="Date-Input"/>
+    <button id="Add" class="Add-Button">Add</button>
+    </div>
+
+</div>
+</div>
+<div id="Tasks-Div"></div>
+<script src="To-Do.js"></script>
+</body>
+</html>
