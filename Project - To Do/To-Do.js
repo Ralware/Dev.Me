@@ -9,7 +9,7 @@ function AddTask() {
         return;
     }
     Tasks.push({
-        TaskName: TaskValue, DueDate: DueDateValue , done:false
+        TaskName: TaskValue, DueDate: DueDateValue, done: false
     });
     localStorage.setItem("Tasks", JSON.stringify(Tasks));
     document.getElementById('Input').value = '';

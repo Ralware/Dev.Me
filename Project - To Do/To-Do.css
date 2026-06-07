@@ -82,11 +82,11 @@
 }
 
 .Add-Button:hover {
-  opacity:0.85;
+  opacity: 0.85;
 }
 
 .Add-Button:active {
-  opacity:0.75;
+  opacity: 0.75;
 }
 
 .Delete-Button {
@@ -95,21 +95,20 @@
   background-color: #000000;
   border-radius: 10px;
   cursor: pointer;
-  transition:150ms;
+  transition: 150ms;
 }
 .Delete-Button:hover {
-  background-color:red;
-  border:2px solid red;
+  background-color: red;
+  border: 2px solid red;
 }
 
-.Done-Button
-{
+.Done-Button {
   padding: 10px 15px;
   color: white;
   background-color: #000000;
   border-radius: 10px;
   cursor: pointer;
-  transition:150ms;
+  transition: 150ms;
 }
 
 .Task-Row {
@@ -127,15 +126,13 @@
   gap: 20px;
 }
 
-.Done-Decoration
-{
+.Done-Decoration {
   text-decoration: line-through;
 }
 
-.Done-Color
-{
+.Done-Color {
   transition: 150ms;
   border: 2px solid #00ff00;
   background-color: #00ff00;
-  color:white;
+  color: white;
 }
