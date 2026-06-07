@@ -5,12 +5,11 @@ const Tasks = [];
 function AddTask() {
     const TaskValue = document.getElementById('Input').value;
     const DueDateValue = document.getElementById('DueDate').value;
-    if(TaskValue === '') {
+    if (TaskValue === '') {
         return;
     }
     Tasks.push({
-        TaskName: TaskValue,
-        DueDate: DueDateValue
+        TaskName: TaskValue, DueDate: DueDateValue
     });
 
     document.getElementById('Input').value = '';

@@ -1,118 +1,106 @@
-*
-{
-    margin: 0;
-    padding: 0;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.Title
-{
-    text-wrap:nowrap;
-    font-family: Dancing Script, sans-serif;
-    font-size:50px;
-    text-align: center;
+.Title {
+  text-wrap: nowrap;
+  font-family:
+    Dancing Script,
+    sans-serif;
+  font-size: 50px;
+  text-align: center;
 }
 
-.Page
-{
-    background-color:white;
+.Page {
+  background-color: white;
 }
 
-.Top-Bar-Wrapper
-{
-    background-color:white;
-    position:sticky;
-    top:0;
+.Top-Bar-Wrapper {
+  background-color: white;
+  position: sticky;
+  top: 0;
 }
-.Task-Row
-{
-    background-color:white;
-    padding:10px 10px;
-    border: 2px solid black;
-    border-radius: 10px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+.Task-Row {
+  background-color: white;
+  padding: 10px 10px;
+  border: 2px solid black;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
-.Task-Input
-{
-    border:2px solid black;
-    font-size:16px;
-    border-radius: 10px;
-    padding: 10px 25px;
+.Task-Input {
+  border: 2px solid black;
+  font-size: 16px;
+  border-radius: 10px;
+  padding: 10px 25px;
 }
 .Task-Input:focus,
-.Date-Input:focus{
-    outline: none;
+.Date-Input:focus {
+  outline: none;
 }
-.Task-Input::placeholder
-{
-    font-size:16px;
-    color: black;
-}
-
-.New-Tasks-Container
-{
-    padding: 0 20px;
-    margin: 0 10px 5px 5px;
-    border-radius: 10px;
-    display:flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    gap:25px;
+.Task-Input::placeholder {
+  font-size: 16px;
+  color: black;
 }
 
-.Inputs-Container
-{
-    display:flex;
-    flex-direction: row;
-    align-items: center;
-    gap:10px;
+.New-Tasks-Container {
+  padding: 0 20px;
+  margin: 0 10px 5px 5px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 25px;
 }
 
-.Date-Input
-{
-    border-radius: 10px;
-    border:2px solid black;
-    padding: 10px;
+.Inputs-Container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
 }
 
-.Add-Button
-{
-    padding:12px 25px;
-    color:white;
-    font-weight:bold;
-    border-radius: 10px;
-    background-color:black;
-    font-size:16px;
-    border:none;
-    cursor:pointer;
+.Date-Input {
+  border-radius: 10px;
+  border: 2px solid black;
+  padding: 10px;
 }
 
-.Delete-Button
-{
-    padding:10px 15px;
-    color:white;
-    background-color: #000000;
-    border-radius:10px;
-    cursor:pointer;
+.Add-Button {
+  padding: 12px 25px;
+  color: white;
+  font-weight: bold;
+  border-radius: 10px;
+  background-color: black;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
 }
 
-.Task-Row
-{
-    display:flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    margin:10px 5px;
+.Delete-Button {
+  padding: 10px 15px;
+  color: white;
+  background-color: #000000;
+  border-radius: 10px;
+  cursor: pointer;
 }
 
-.Date-Delete
-{
-    display:flex;
-    flex-direction: row;
-    align-items: center;
-    gap:20px;
+.Task-Row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin: 10px 5px;
+}
+
+.Date-Delete {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
 }
