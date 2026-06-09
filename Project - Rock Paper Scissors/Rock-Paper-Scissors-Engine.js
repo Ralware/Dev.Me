@@ -1,5 +1,7 @@
 let RandomOutput = '';
 let Outcome = '';
+let IsAutoPlaying = false;
+let IntervalID;
 
 const SavedGame = JSON.parse(localStorage.getItem("GameVariables"));
 
@@ -96,6 +98,43 @@ function PrintComputerChoice() {
         document.querySelector('.Output').innerHTML = '<img alt="Your Choice" class="Icons" src="Sources/Scissors.Icon.png">';
     }
 }
+
 /* Project Completed ! */
+
+function AutoChoose() {
+
+    if (!IsAutoPlaying) {
+
+        document.getElementById('AutomatedPlay').innerText = "Stop Auto Play";
+
+        IntervalID = setInterval(function () {
+
+            let RandomChoice = Math.random();
+            let AutoOutput = "";
+
+            if (RandomChoice < 1 / 3) {
+                AutoOutput = "Rock";
+            } else if (RandomChoice < 2 / 3) {
+                AutoOutput = "Paper";
+            } else {
+                AutoOutput = "Scissors";
+            }
+
+            GameEngine(AutoOutput);
+
+        }, 1500);
+
+        IsAutoPlaying = true;
+
+    } else {
+
+        clearInterval(IntervalID);
+        document.getElementById('AutomatedPlay').innerText = "Start Auto Play";
+        IsAutoPlaying = false;
+
+    }
+}
+
+document.getElementById('AutomatedPlay').addEventListener("click",AutoChoose);
 
 

@@ -84,7 +84,9 @@ body {
   box-shadow: 1px 1px 10px rgb(255, 255, 255, 0.5);
 }
 
-.Reset-Button {
+.Reset-Button,
+.Auto-Play
+{
   padding: 10px;
   border: 2px solid white;
   background-color: transparent;
@@ -96,11 +98,13 @@ body {
   cursor: pointer;
 }
 
-.Reset-Button:hover {
+.Reset-Button:hover,
+.Auto-Play:hover{
   background-color: rgb(222, 222, 222, 0.25);
 }
 
-.Reset-Button:active {
+.Reset-Button:active,
+.Auto-Play:active {
   background-color: rgba(255, 255, 255, 0.5);
 }
 
