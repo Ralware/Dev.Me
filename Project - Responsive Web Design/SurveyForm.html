@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Developer Experience Survey</title>
+  </head>
+
+  <body>
+    <h1 id="title">Developer Experience Survey</h1>
+
+    <p id="description">
+      Thank you for taking the time to help us improve our developer community.
+      Please fill out this short survey honestly.
+    </p>
+
+    <form id="survey-form">
+      <!-- Name -->
+      <label id="name-label" for="name">Full Name</label><br />
+      <input
+        id="name"
+        type="text"
+        placeholder="Enter your full name"
+        required
+      />
+      <br /><br />
+
+      <!-- Email -->
+      <label id="email-label" for="email">Email Address</label><br />
+      <input id="email" type="email" placeholder="Enter your email" required />
+      <br /><br />
+
+      <!-- Number -->
+      <label id="number-label" for="number">Years of Coding Experience</label
+      ><br />
+      <input
+        id="number"
+        type="number"
+        min="1"
+        max="50"
+        placeholder="e.g. 3"
+        required
+      />
+      <br /><br />
+
+      <!-- Dropdown -->
+      <label for="dropdown">Current Skill Level</label><br />
+      <select id="dropdown">
+        <option disabled selected>Select an option</option>
+        <option>Beginner (0-1 years)</option>
+        <option>Intermediate (2-4 years)</option>
+        <option>Advanced (5+ years)</option>
+        <option>Professional Developer</option>
+      </select>
+
+      <br /><br />
+
+      <!-- Radio Buttons -->
+      <p>Would you recommend learning programming to others?</p>
+
+      <input id="yes-option" type="radio" name="options" value="yes" />
+      <label for="yes-option">Definitely</label>
+
+      <br />
+
+      <input id="no-option" type="radio" name="options" value="no" />
+      <label for="no-option">Not Really</label>
+
+      <br /><br />
+
+      <!-- Checkboxes -->
+      <p>Which programming languages do you currently use?</p>
+
+      <input type="checkbox" id="python" value="Python" />
+      <label for="python">Python</label>
+
+      <br />
+
+      <input type="checkbox" id="javascript" value="JavaScript" />
+      <label for="javascript">JavaScript</label>
+
+      <br />
+
+      <input type="checkbox" id="java" value="Java" />
+      <label for="java">Java</label>
+
+      <br />
+
+      <input type="checkbox" id="cpp" value="C++" />
+      <label for="cpp">C++</label>
+
+      <br /><br />
+
+      <!-- Textarea -->
+      <label for="comments"> Any suggestions or feedback? </label>
+
+      <br />
+
+      <textarea
+        id="comments"
+        rows="6"
+        cols="50"
+        placeholder="Share your thoughts here..."
+      ></textarea>
+
+      <br /><br />
+
+      <!-- Submit -->
+      <button type="submit" id="submit">Submit Survey</button>
+    </form>
+  </body>
+</html>
