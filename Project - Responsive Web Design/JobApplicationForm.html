@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Job Application Form</title>
+    <style>
+      body {
+        background-color: black;
+        color: white;
+      }
+
+      input:focus,
+      textarea:focus {
+        border: 2px solid rgb(212, 255, 0);
+        outline: none;
+      }
+
+      input {
+        padding: 5px;
+        border-radius: 10px;
+        color: black;
+        border: 2px solid white;
+      }
+
+      select {
+        padding: 5px;
+        outline: none;
+        border: 2px solid rgb(212, 255, 0);
+        border-radius: 10px;
+      }
+
+      button {
+        border: 2px solid rgb(212, 255, 0);
+        padding: 10px;
+        border-radius: 10px;
+        font-weight: bold;
+      }
+
+      button:hover {
+        background-color: rgb(212, 255, 0);
+        border: 2px solid white;
+      }
+
+      input:invalid,
+      select:invalid,
+      textarea:invalid {
+        border: 2px solid red;
+      }
+
+      input:valid,
+      select:valid,
+      textarea:valid {
+        border: 2px solid green;
+      }
+
+      .radio-group input[type="radio"]:checked {
+        border: 2px solid white;
+        background-color: rgb(212, 255, 0);
+        box-shadow: 1px 1px 10px rgb(212, 255, 0);
+      }
+      .radio-group input[type="radio"]:checked + label {
+        color: rgb(212, 255, 0);
+      }
+
+      input:first-of-type {
+        font-style: italic;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <form>
+        <label for="name">Name: </label>
+        <input type="text" id="name" />
+
+        <label for="email">Email: </label>
+        <input type="email" id="email" />
+
+        <label for="position">Role Availability: </label>
+        <select id="position">
+          <option>SWE Level 1</option>
+          <option>SWE Level 2</option>
+          <option>Data Analyst</option>
+        </select>
+
+        <section class="radio-group">
+          <input type="radio" name="availability" id="option" />
+          <label for="option">SWE Level 1</label>
+
+          <input type="radio" name="availability" id="option" />
+          <label for="option">SWE Level 2</label>
+
+          <input type="radio" name="availability" id="option" />
+          <label for="option">Data Analyst</label>
+
+          <label for="message">Extra</label>
+          <textarea id="message"></textarea>
+        </section>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </body>
+</html>
