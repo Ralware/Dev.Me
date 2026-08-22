@@ -1,70 +1,72 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
+<head>
+    <meta charset="utf-8"/>
     <title>Styled To-Do List</title>
     <style>
-      body {
-        background-color: black;
-      }
-      * {
-        color: white;
-      }
-      a {
-        text-decoration: none;
-      }
+        body {
+            background-color: black;
+        }
 
-      a:visited {
-        color: black;
-      }
+        * {
+            color: white;
+        }
 
-      a:link {
-        color: yellow;
-      }
+        a {
+            text-decoration: none;
+        }
 
-      a:hover {
-        color: red;
-      }
+        a:visited {
+            color: black;
+        }
 
-      a:active {
-        color: skyblue;
-      }
+        a:link {
+            color: yellow;
+        }
 
-      a:focus {
-        border: 2px solid yellow;
-      }
+        a:hover {
+            color: red;
+        }
+
+        a:active {
+            color: skyblue;
+        }
+
+        a:focus {
+            border: 2px solid yellow;
+        }
     </style>
-  </head>
+</head>
 
-  <body>
-    <ul class="todo-list">
-      <li>
-        <input type="checkbox" id="Task-1" /><label for="Task-1">Task 1</label>
+<body>
+<ul class="todo-list">
+    <li>
+        <input id="Task-1" type="checkbox"/><label for="Task-1">Task 1</label>
         <ul class="sub-item">
-          <li><a href="/" target="_blank" class="sub-item-link">Task 1</a></li>
+            <li><a class="sub-item-link" href="/" target="_blank">Task 1</a></li>
         </ul>
-      </li>
+    </li>
 
-      <li>
-        <input type="checkbox" id="Task-2" /><label for="Task-2">Task 2</label>
+    <li>
+        <input id="Task-2" type="checkbox"/><label for="Task-2">Task 2</label>
         <ul class="sub-item">
-          <li><a href="/" target="_blank" class="sub-item-link">Task 2</a></li>
+            <li><a class="sub-item-link" href="/" target="_blank">Task 2</a></li>
         </ul>
-      </li>
+    </li>
 
-      <li>
-        <input type="checkbox" id="Task-3" /><label for="Task-3">Task 3</label>
+    <li>
+        <input id="Task-3" type="checkbox"/><label for="Task-3">Task 3</label>
         <ul class="sub-item">
-          <li><a href="/" target="_blank" class="sub-item-link">Task 3</a></li>
+            <li><a class="sub-item-link" href="/" target="_blank">Task 3</a></li>
         </ul>
-      </li>
+    </li>
 
-      <li>
-        <input type="checkbox" id="Task-1" /><label for="Task-1">Task 4</label>
+    <li>
+        <input id="Task-1" type="checkbox"/><label for="Task-1">Task 4</label>
         <ul class="sub-item">
-          <li><a href="/" target="_blank" class="sub-item-link">Task 4</a></li>
+            <li><a class="sub-item-link" href="/" target="_blank">Task 4</a></li>
         </ul>
-      </li>
-    </ul>
-  </body>
+    </li>
+</ul>
+</body>
 </html>
