@@ -26,6 +26,3 @@ def AddTwoNumbers(l1,l2):
 
 print(AddTwoNumbers([9,9,9,9,9,9,9],[9,9,9,9]))
 
-
-    
-
