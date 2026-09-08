@@ -52,4 +52,24 @@ function runSequence(config, cycles) {
   }
 }
 
+function generateTimeline(config, cycles) {
+  let timelineArray = [];
+
+  for (let j = 0; j < cycles; j++) {
+    for (let i = 0; i < config["phases"].length; i++) {
+      let num = config["phases"][i]["duration"];
+
+      if (timelineArray.length === 0) {
+        timelineArray.push(num);
+      } else {
+        timelineArray.push(timelineArray[timelineArray.length - 1] + num);
+      }
+    }
+  }
+
+  return timelineArray;
+}
+
+console.log(generateTimeline(config1, 2));
 console.log(runSequence(config1, 2));
+
