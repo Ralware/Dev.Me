@@ -1,0 +1,20 @@
+*{
+    box-sizing: border-box;
+}
+.Item {
+  padding: 2em;
+  background-color: rgb(31, 31, 31);
+  color: rgb(230, 230, 230);
+  text-align: center;
+  border-radius: 10px;
+  font-size: 2rem;
+}
+
+.Grid-Container {
+    height: 100vh;
+    display:grid;
+    grid-template-columns: 200px 200px 200px;
+    grid-template-rows: 200px 200px 200px;
+    gap:1em;
+}
+
