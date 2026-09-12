@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sem-1 · Section P6 Timetable</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="Time-Table-Styles.css">
+</head>
+<body>
+<div class="page">
+
+  <div class="meta">
+    <div class="meta-item">
+      <div class="meta-label">Batch</div>
+      <div class="meta-value">F 503</div>
+    </div>
+    <div class="meta-item">
+      <div class="meta-label">Class</div>
+      <div class="meta-value">Sem-1</div>
+    </div>
+    <div class="meta-item">
+      <div class="meta-label">Department</div>
+      <div class="meta-value">-</div>
+    </div>
+    <div class="meta-item">
+      <div class="meta-label">Section</div>
+      <div class="meta-value">Section P6</div>
+    </div>
+    <div class="meta-item">
+      <div class="meta-label">Room</div>
+      <div class="meta-value">F 503</div>
+    </div>
+  </div>
+
+  <div class="legend">
+    <div class="legend-item"><span class="legend-dot" style="background:var(--c-python)"></span>Python / CPS</div>
+    <div class="legend-item"><span class="legend-dot" style="background:var(--c-math)"></span>Mathematics</div>
+    <div class="legend-item"><span class="legend-dot" style="background:var(--c-physics)"></span>Physics</div>
+    <div class="legend-item"><span class="legend-dot" style="background:var(--c-mech)"></span>Mechanical</div>
+    <div class="legend-item"><span class="legend-dot" style="background:var(--c-elec)"></span>Electrical</div>
+    <div class="legend-item"><span class="legend-dot" style="background:var(--c-env)"></span>Environmental</div>
+  </div>
+
+  <div class="timetable">
+
+    <!-- Header row -->
+    <div class="row row-head">
+      <div class="col-day"></div>
+      <div class="col-slot time-head">08:00 - 09:00 AM</div>
+      <div class="col-slot time-head">09:00 - 10:00 AM</div>
+      <div class="col-break"></div>
+      <div class="col-slot time-head">10:30 - 11:30 AM</div>
+      <div class="col-slot time-head">11:30 - 12:30 PM</div>
+      <div class="col-break"></div>
+      <div class="col-slot time-head">01:15 - 02:15 PM</div>
+      <div class="col-slot time-head">02:15 - 03:15 PM</div>
+      <div class="col-slot time-head">03:15 - 04:00 PM</div>
+    </div>
+
+    <!-- MONDAY -->
+    <div class="row">
+      <div class="col-day"><span class="day-full">Monday</span><span class="day-abbr">Mon</span></div>
+      <div class="col-slot">
+        <div class="slot-body" style="--course-color:var(--c-python)">
+          <div class="course-code"><span class="code-full">UE26CS151A</span><span class="code-abbr">CS151A</span></div>
+          <div class="course-name">Python for Computational Problem Solving</div>
+          <div class="faculty">F: Anil Kumar S</div>
+        </div>
+      </div>
+      <div class="col-slot">
+        <div class="slot-body" style="--course-color:var(--c-math)">
+          <div class="course-code"><span class="code-full">UE26MA141A</span><span class="code-abbr">MA141A</span></div>
+          <div class="course-name">Engineering Mathematics – I</div>
+          <div class="faculty">F: Ms Kavyashree</div>
+        </div>
+      </div>
+      <div class="col-break"><span class="break-label">Break</span></div>
+      <div class="col-slot">
+        <div class="slot-body" style="--course-color:var(--c-physics)">
+          <div class="course-code"><span class="code-full">UE26PH151A</span><span class="code-abbr">PH151A</span></div>
+          <div class="course-name">Engineering Physics</div>
+          <div class="faculty">F: Shruti S Devangamath</div>
+        </div>
+      </div>
+      <div class="col-slot">
+        <div class="slot-body" style="--course-color:var(--c-mech)">
+          <div class="course-code"><span class="code-full">UE26ME141A</span><span class="code-abbr">ME141A</span></div>
+          <div class="course-name">Mechanical Engineering Sciences</div>
+          <div class="faculty">F: Srinivasa Prasad K S</div>
+        </div>
+      </div>
+      <div class="col-break"><span class="break-label">Break</span></div>
+      <div class="col-slot"><div class="slot-body empty">No Schedule</div></div>
+      <div class="col-slot">
+        <div class="slot-body" style="--course-color:var(--c-math)">
+          <div class="course-code"><span class="code-full">UE26MA141A</span><span class="code-abbr">MA141A</span></div>
+          <div class="course-name">Engineering Mathematics – I</div>
+          <div class="faculty">F: Ms Kavyashree</div>
+        </div>
+      </div>
+      <div class="col-slot"><div class="slot-body empty">No Schedule</div></div>
+    </div>
+
+    <!-- TUESDAY -->
+    <div class="row">
+      <div class="col-day"><span class="day-full">Tuesday</span><span class="day-abbr">Tue</span></div>
+      <div class="col-slot">
+        <div class="slot-body" style="--course-color:var(--c-python)">
+          <div class="course-code"><span class="code-full">UE26CS151A (LAB)</span><span class="code-abbr">CS151A (LAB)</span></div>
+          <div class="course-name">Python for CPS Integrated with Lab</div>
+          <div class="faculty">F: Anil Kumar S</div>
+        </div>
+      </div>
+      <div class="col-slot">
+        <div class="slot-body" style="--course-color:var(--c-python)">
+          <div class="course-code"><span class="code-full">UE26CS151A (LAB)</span><span class="code-abbr">CS151A (LAB)</span></div>
+          <div class="course-name">Python for CPS Integrated with Lab</div>
+          <div class="faculty">F: Anil Kumar S</div>
+        </div>
+      </div>
+      <div class="col-break"><span class="break-label">Break</span></div>
+      <div class="col-slot">
+        <div class="slot-body" style="--course-color:var(--c-elec)">
+          <div class="course-code"><span class="code-full">UE26EE141A</span><span class="code-abbr">EE141A</span></div>
+          <div class="course-name">Elements of Electrical Engineering</div>
+          <div class="faculty">F: Mrs Jyothi T.N</div>
+        </div>
+      </div>
+      <div class="col-slot">
+        <div class="slot-body" style="--course-color:var(--c-physics)">
+          <div class="course-code"><span class="code-full">UE26PH151A</span><span class="code-abbr">PH151A</span></div>
+          <div class="course-name">Engineering Physics</div>
+          <div class="faculty">F: Shruti S Devangamath</div>
+        </div>
+      </div>
+      <div class="col-break"><span class="break-label">Break</span></div>
+      <div class="col-slot">
+        <div class="slot-body" style="--course-color:var(--c-physics)">
+          <div class="course-code"><span class="code-full">UE26PH151A</span><span class="code-abbr">PH151A</span></div>
+          <div class="course-name">Engineering Physics</div>
+          <div class="faculty">F: Shruti S Devangamath</div>
+        </div>
+      </div>
+      <div class="col-slot">
+        <div class="slot-body" style="--course-color:var(--c-python)">
+          <div class="course-code"><span class="code-full">UE26CS151A</span><span class="code-abbr">CS151A</span></div>
+          <div class="course-name">Python for Computational Problem Solving</div>
+          <div class="faculty">F: Anil Kumar S</div>
+        </div>
+      </div>
+      <div class="col-slot"><div class="slot-body empty">No Schedule</div></div>
+    </div>
+
+    <!-- WEDNESDAY -->
+    <div class="row">
+      <div class="col-day"><span class="day-full">Wednesday</span><span class="day-abbr">Wed</span></div>
+      <div class="col-slot">
+        <div class="slot-body" style="--course-color:var(--c-math)">
+          <div class="course-code"><span class="code-full">UE26MA141A</span><span class="code-abbr">MA141A</span></div>
+          <div class="course-name">Engineering Mathematics – I</div>
+          <div class="faculty">F: Ms Kavyashree</div>
+        </div>
+      </div>
+      <div class="col-slot">
+        <div class="slot-body" style="--course-color:var(--c-elec)">
+          <div class="course-code"><span class="code-full">UE26EE141A</span><span class="code-abbr">EE141A</span></div>
+          <div class="course-name">Elements of Electrical Engineering</div>
+          <div class="faculty">F: Mrs Jyothi T.N</div>
+        </div>
+      </div>
+      <div class="col-break"><span class="break-label">Break</span></div>
+      <div class="col-slot">
+        <div class="slot-body" style="--course-color:var(--c-python)">
+          <div class="course-code"><span class="code-full">UE26CS151A</span><span class="code-abbr">CS151A</span></div>
+          <div class="course-name">Python for Computational Problem Solving</div>
+          <div class="faculty">F: Anil Kumar S</div>
+        </div>
+      </div>
+      <div class="col-slot">
+        <div class="slot-body" style="--course-color:var(--c-mech)">
+          <div class="course-code"><span class="code-full">UE26ME141A</span><span class="code-abbr">ME141A</span></div>
+          <div class="course-name">Mechanical Engineering Sciences</div>
+          <div class="faculty">F: Srinivasa Prasad K S</div>
+        </div>
+      </div>
+      <div class="col-break"><span class="break-label">Break</span></div>
+      <div class="col-slot">
+        <div class="slot-body" style="--course-color:var(--c-physics)">
+          <div class="course-code"><span class="code-full">UE26PH151A</span><span class="code-abbr">PH151A</span></div>
+          <div class="course-name">Engineering Physics</div>
+          <div class="faculty">F: Shruti S Devangamath</div>
+        </div>
+      </div>
+      <div class="col-slot"><div class="slot-body empty">No Schedule</div></div>
+      <div class="col-slot"><div class="slot-body empty">No Schedule</div></div>
+    </div>
+
+    <!-- THURSDAY -->
+    <div class="row">
+      <div class="col-day"><span class="day-full">Thursday</span><span class="day-abbr">Thu</span></div>
+      <div class="col-slot">
+        <div class="slot-body" style="--course-color:var(--c-elec)">
+          <div class="course-code"><span class="code-full">UE26EE141A</span><span class="code-abbr">EE141A</span></div>
+          <div class="course-name">Elements of Electrical Engineering</div>
+          <div class="faculty">F: Mrs Jyothi T.N</div>
+        </div>
+      </div>
+      <div class="col-slot">
+        <div class="slot-body" style="--course-color:var(--c-python)">
+          <div class="course-code"><span class="code-full">UE26CS151A</span><span class="code-abbr">CS151A</span></div>
+          <div class="course-name">Python for Computational Problem Solving</div>
+          <div class="faculty">F: Anil Kumar S</div>
+        </div>
+      </div>
+      <div class="col-break"><span class="break-label">Break</span></div>
+      <div class="col-slot">
+        <div class="slot-body" style="--course-color:var(--c-physics)">
+          <div class="course-code"><span class="code-full">UE26PH151A</span><span class="code-abbr">PH151A</span></div>
+          <div class="course-name">Engineering Physics</div>
+          <div class="faculty">F: Shruti S Devangamath</div>
+        </div>
+      </div>
+      <div class="col-slot">
+        <div class="slot-body" style="--course-color:var(--c-math)">
+          <div class="course-code"><span class="code-full">UE26MA141A</span><span class="code-abbr">MA141A</span></div>
+          <div class="course-name">Engineering Mathematics – I</div>
+          <div class="faculty">F: Ms Kavyashree</div>
+        </div>
+      </div>
+      <div class="col-break"><span class="break-label">Break</span></div>
+      <div class="col-slot"><div class="slot-body empty">No Schedule</div></div>
+      <div class="col-slot"><div class="slot-body empty">No Schedule</div></div>
+      <div class="col-slot"><div class="slot-body empty">No Schedule</div></div>
+    </div>
+
+    <!-- FRIDAY -->
+    <div class="row">
+      <div class="col-day"><span class="day-full">Friday</span><span class="day-abbr">Fri</span></div>
+      <div class="col-slot">
+        <div class="slot-body" style="--course-color:var(--c-python)">
+          <div class="course-code"><span class="code-full">UE26CS151A</span><span class="code-abbr">CS151A</span></div>
+          <div class="course-name">Python for Computational Problem Solving</div>
+          <div class="faculty">F: Anil Kumar S</div>
+        </div>
+      </div>
+      <div class="col-slot">
+        <div class="slot-body" style="--course-color:var(--c-math)">
+          <div class="course-code"><span class="code-full">UE26MA141A</span><span class="code-abbr">MA141A</span></div>
+          <div class="course-name">Engineering Mathematics – I</div>
+          <div class="faculty">F: Ms Kavyashree</div>
+        </div>
+      </div>
+      <div class="col-break"><span class="break-label">Break</span></div>
+      <div class="col-slot">
+        <div class="slot-body" style="--course-color:var(--c-physics)">
+          <div class="course-code"><span class="code-full">UE26PH151A (LAB)</span><span class="code-abbr">PH151A (LAB)</span></div>
+          <div class="course-name">Engineering Physics Integrated with Lab</div>
+          <div class="faculty">F: Dr Reena I</div>
+        </div>
+      </div>
+      <div class="col-slot">
+        <div class="slot-body" style="--course-color:var(--c-physics)">
+          <div class="course-code"><span class="code-full">UE26PH151A (LAB)</span><span class="code-abbr">PH151A (LAB)</span></div>
+          <div class="course-name">Engineering Physics Integrated with Lab</div>
+          <div class="faculty">F: Dr Reena I</div>
+        </div>
+      </div>
+      <div class="col-break"><span class="break-label">Break</span></div>
+      <div class="col-slot">
+        <div class="slot-body" style="--course-color:var(--c-elec)">
+          <div class="course-code"><span class="code-full">UE26EE141A</span><span class="code-abbr">EE141A</span></div>
+          <div class="course-name">Elements of Electrical Engineering</div>
+          <div class="faculty">F: Mrs Jyothi T.N</div>
+        </div>
+      </div>
+      <div class="col-slot">
+        <div class="slot-body" style="--course-color:var(--c-mech)">
+          <div class="course-code"><span class="code-full">UE26ME141A</span><span class="code-abbr">ME141A</span></div>
+          <div class="course-name">Mechanical Engineering Sciences</div>
+          <div class="faculty">F: Srinivasa Prasad K S</div>
+        </div>
+      </div>
+      <div class="col-slot"><div class="slot-body empty">No Schedule</div></div>
+    </div>
+
+    <!-- SATURDAY -->
+    <div class="row">
+      <div class="col-day"><span class="day-full">Saturday</span><span class="day-abbr">Sat</span></div>
+      <div class="col-slot">
+        <div class="slot-body" style="--course-color:var(--c-env)">
+          <div class="course-code"><span class="code-full">UE26EV121A</span><span class="code-abbr">EV121A</span></div>
+          <div class="course-name">Environmental Studies and Life Sciences</div>
+          <div class="faculty">F: Jhinuk Chatterjee</div>
+        </div>
+      </div>
+      <div class="col-slot">
+        <div class="slot-body" style="--course-color:var(--c-env)">
+          <div class="course-code"><span class="code-full">UE26EV121A</span><span class="code-abbr">EV121A</span></div>
+          <div class="course-name">Environmental Studies and Life Sciences</div>
+          <div class="faculty">F: Jhinuk Chatterjee</div>
+        </div>
+      </div>
+      <div class="col-break"><span class="break-label">Break</span></div>
+      <div class="col-slot"><div class="slot-body empty">No Schedule</div></div>
+      <div class="col-slot"><div class="slot-body empty">No Schedule</div></div>
+      <div class="col-break"><span class="break-label">Break</span></div>
+      <div class="col-slot"><div class="slot-body empty">No Schedule</div></div>
+      <div class="col-slot"><div class="slot-body empty">No Schedule</div></div>
+      <div class="col-slot"><div class="slot-body empty">No Schedule</div></div>
+    </div>
+
+  </div>
+
+</div>
+</body>
+</html>
